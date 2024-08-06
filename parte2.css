@@ -1,0 +1,272 @@
+.logo {
+    width: 100px;
+}
+
+.overflow-hidden {
+    font-family: 'Josefin sans';
+    display: flex;
+    
+}
+
+.navbar {
+    background-color: #fff;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+
+}
+
+.navbar-brand {
+    font-weight: 500;
+    color: aquamarine;
+    font-size: 24px;
+    transform: 0.3s color;
+
+}
+
+.ejemplo-button {
+    background-color: aquamarine;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.ejemplo-button:hover {
+    background-color: rgb(35, 134, 101);
+
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #cbc7c7;
+}
+
+
+.nav-item ul {
+    background: white;
+    list-style: none;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.nav-item li {
+    width: 100%;
+}
+
+.nav-item .sub-item a {
+    color: black;
+    text-decoration: none;
+    background: white;
+    font-size: 14px;
+    display: flex;
+    padding: 5px 20px;
+    transition: all 0.25s ease;
+}
+
+#submenu {
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+    z-index: 1;
+}
+
+
+li:hover ul#submenu {
+    opacity: 1;
+    margin-top: 2%;
+    visibility: visible;
+}
+
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute; /* */
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: aquamarine;
+        visibility: hidden;
+        transition: 0.7s, ease-in-out;
+    }
+
+    .nav-link:hover::before, .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+.hero-section {
+    background: url(./src/images/fondo.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+    position: relative;
+}
+
+.hero-section::before {
+    background-color: rgba(0, 0, 0, 0, 6);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/* contenedores de informacion */
+
+.hero-section .info1 {
+    top: 8%;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+    margin-top: 5%;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 2%;
+    transition: 0.5s;
+    position:relative;
+    text-align: justify;
+
+    view-timeline-name: --divanime;
+    view-timeline-axis: block;
+
+    animation-timeline: --divanime;
+    animation-name: show;
+
+    animation-range: entry 10% cover 50%;
+    animation-fill-mode: both;
+}
+
+
+/*pie de pagina */
+
+.footer-container {
+    width: 100%;
+    background-color: transparent;
+    padding: 1%;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+   }
+
+/*Animacion contenedores general */
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .hero-section .info1{
+        padding: 5%;
+    }
+    #titulo-navbar {
+        visibility: hidden;
+    }
+
+    .logo {
+        width: 70px;
+    }
+}
+
+.hero-section #cont29-30 {
+    display: flex;
+}
+
+#images18 {
+    width: 100%;
+    margin: 10px;
+}
+
+#cuadro22 {
+    width: 100%;
+}
+
+#cuadro3 {
+    width: 35%;
+}
+.hero-section .contenedor4 {
+    text-align: center;
+}
+
+#cont5-6 {
+    display: flex;
+}
+
+.contenedor6{
+    margin: 10px;
+}
+
+.contenedor8 {
+    margin-bottom: 20px;
+}
+
+#images17{
+    width: 40%;
+}
+
+.conteimg2, .conteimg3, .conteimg4, .conteimg5, .contenedor27, .conteimg1, .contenedor18, .contenedor12, .contenedor14, .contenedor8, .contenedor10{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#ultimocuadro {
+    margin-bottom: 10%;
+}
+
+@media (max-width: 991px) {
+    .hero-section #cont5-6{
+        display: block;
+    }
+    
+    .contenedor6, .contenedor30{
+        text-align: center;
+    }
+    
+    .hero-section #cont29-30 {
+        display: block;
+    }
+
+    #images18 {
+        width: 40%;
+    }
+    
+    #images17 {
+        width: 70%;
+    }
+
+    #cuadro3 {
+        width: 70%;
+    }
+}

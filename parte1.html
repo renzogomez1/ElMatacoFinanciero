@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./parte1.css" />
+    <script src="./scroll.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin Sans"
+      rel="stylesheet"
+    />
+
+    <title>El Mataco Financiero</title>
+  </head>
+
+  <body class="vh-100 overflow-hidden">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <img src="./src/images/mataquito.png" alt="LogoMata" class="logo" />
+        <a class="navbar-brand me-auto" id="titulo-navbar" href="#">El Mataco Financiero</a>
+
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              El Mataco Financiero
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" aria-current="page" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="./sistema.html">Sistema</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2 active" id="item-submenu">Creacion Proyecto</a>
+                  <ul class="sub-item" id="submenu">
+                    <li class="item-submenu"><a href="./parte1.html" class="nav-item mx-lg-2">Emprendedorismo</a></li>
+                    <li class="item-submenu"><a href="./parte2.html" class="nav-item mx-lg-2">Estudio de Mercados</a></li>
+                    <li class="item-submenu"><a href="./parte3.html" class="nav-item mx-lg-2">Ingenieria de Proyecto</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link mx-lg-2">Test Emprendedor</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="#" class="ejemplo-button">Modelo</a>
+        <button
+          class="navbar-toggler pe-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- Fondo -->
+    <section class="hero-section">
+      <div class="slider"></div>
+      <div class="container info1" id="cont1">
+        <div class="cont2">
+          <h2>Emprendedorismo</h2>
+          <h4>Conceptos básicos sobre espíritu emprendedor</h4>
+          <p>
+            En el siglo XVIII se definió al espíritu emprendedor como el proceso
+            de asumir el riesgo de comprar a precios ciertos y vender a precios
+            inciertos, es decir, que estaba relacionado básicamente con las
+            transacciones comerciales. A medida que fue pasando el tiempo, con los
+            cambios en la industria, se comenzó a incluir el concepto de reunir y
+            combinar los factores de producción. Por último, se sumó a la
+            definición de espíritu emprendedor el concepto de innovación que podía
+            referirse a un cambio o modificación sobre los procesos operativos,
+            administrativos, de mercado, de productos, como así también, a un
+            cambio de organización o empresa.
+          </p>
+          <p>
+            Actualmente, el espíritu emprendedor es el desarrollo de proyectos
+            innovadores o de oportunidades para obtener beneficios; es la
+            capacidad de desarrollar una idea nueva o modificar una existente para
+            traducirla en una actividad social rentable y productiva. Es una
+            actitud donde se debe plantear un objetivo y luchar para lograrlo,
+            mediante la innovación y la creatividad. El emprendedorismo consiste
+            en la unión de dos fenómenos: la presencia de oportunidades y de
+            emprendedores.
+          </p>
+        </div>
+        <div class="cont1">
+          <img src="./src/images/emprendedor.jpg" alt="Emprend" id="emprend1">
+        </div>
+      </div>
+      <div class="container info1">
+        <h4>¿Qué es un Emprendedor?</h4>
+        <p>
+          Un emprendedor, es aquella persona que convencida de realizar algo, lo
+          intenta hasta conseguirlo sin importar lo dificultosas o arriesgadas
+          que hayan tenido que ser las decisiones tomadas. Según Peter Drucker
+          (1964), un emprendedor o entrepreneur, es aquél que busca el cambio,
+          responde a él y explota sus oportunidades. La innovación es una
+          herramienta específica de un emprendedor, por lo tanto el emprendedor
+          efectivo convierte una fuente en un recurso.
+        </p>
+        <p>
+          Un emprendedor no es necesariamente una persona que tiene una buena
+          idea, alguna habilidad técnica, o un conocimiento específico. En esta
+          categoría se encontrarían los inventores, artesanos o artistas. A
+          diferencia de ellos, los emprendedores son gente capaz de construir la
+          organización idónea que le permita concretar un producto o servicio
+          que sea valorado por el mercado.
+        </p>
+      </div>
+      <div class="container info1">
+        <h4>¿Qué tipos de Emprendedores hay?</h4>
+        <p>
+          Emprendedores por necesidad: son aquellos que dadas las
+          características del entorno se ven empujados a emprender. Generalmente
+          son dos los motores que llevan a emprendedor por necesidad a recorrer
+          su camino: por la necesidad de incrementar sus ingresos o por la
+          necesidad de generar mejores oportunidades laborales. Este tipo de
+          emprendedores, señalan los técnicos de Global Entrepreneurship Monitor
+          (GEM), se presenta en economías donde existe una mayor demanda de
+          puestos de trabajo que la oferta disponible. Este tipo de emprendedor
+          no se preparó previamente para realizar su emprendimiento, es decir,
+          que no ha buscado o detectado una oportunidad, generando un producto o
+          servicio diferenciado, ni tampoco ha investigado algún mercado. Es su
+          propia situación la que le ha impuesto salir a ofrecer alguna
+          propuesta para lograr sobrevivir.
+        </p>
+      </div>
+      <div class="container info1">
+        <h4>Otro tipo de Emprendedores</h4>
+        <p>
+          Emprendedores por oportunidad: son aquellas personas que sí han
+          detectado una necesidad no satisfecha y que creen poder satisfacer con
+          creces. La observación y la detección de oportunidades son aptitudes
+          propias de un emprendedor. La mayoría de este tipo de emprendedores
+          tienen cierta formación educativa, y cuentan con algún tipo de red de
+          contactos que pueden provenir de sus estudios, trabajo o familia, que
+          lo motivan y lo ayudan en las primeras etapas de su proyecto.
+        </p>
+        <p>
+          A medida que la economía crece y el mercado se sofistica, se va
+          produciendo una migración desde el primer tipo de emprendedor hacia el
+          emprendedor por oportunidad.
+        </p>
+      </div>
+      <div class="container info1">
+        <h4>Un Emprendedor ¿Se nace ó se hace?</h4>
+        <p>
+          Todos nacemos emprendedores y prueba de ello es que los niños lo son,
+          ya que se cuestionan constantemente el porqué de las cosas y nos
+          sorprenden constantemente. Lo que sucede es que algunos niños limitan
+          su creatividad y aceptan el status quo y otros nunca lo hacemos. Hay
+          una serie de personas que poseen habilidades que se adaptan mejor al
+          perfil “tipo” del emprendedor, energía, empuje, valentía, cierto
+          carácter, capacidad para comunicar, capacidad en la toma de
+          decisiones. No se trata de un talento especial sino que cualquiera
+          puede emprender. Practicando y ejercitando podemos convertir en
+          fortalezas habilidades que eran claras debilidades de nuestro perfil
+          personal o profesional, ahora bien, lo tendrán más fácil aquellas
+          personas que encuentren como fortalezas de su carácter estas
+          habilidades. En conclusión, se puede aprender a ser emprendedor, pero
+          se necesita una predisposición inicial, en conclusión se necesita
+          tener la actitud emprendedora.
+        </p>
+      </div>
+      <div class="container info1">
+        <h4>Una cuestión de Actitud</h4>
+        <p>
+          El emprendedor para definirlo como tal debe contar con Actitud, y
+          podemos definir la misma como un estado de la disposición nerviosa y
+          mental, que se organiza a partir de las vivencias y que orienta o
+          dirige la respuesta de un sujeto ante determinados acontecimientos. La
+          actitud es más bien una motivación social antes que una motivación
+          biológica. A partir de la experiencia, las personas adquieren una
+          cierta predisposición que les permite responder ante los estímulos.
+          Una actitud es la forma en la que un individuo se adapta de forma
+          activa a su entorno y es la consecuencia de un proceso cognitivo,
+          afectivo y conductual. La actitud es la principal característica con
+          la que deben contar los emprendedores.
+        </p>
+      </div>
+      <div class="container info1">
+        <p>
+          Entendemos la capacidad como la destreza, habilidad y la idoneidad que
+          permite a una persona completar con éxito una tarea. El emprendedor
+          debe contar con diferentes capacidades, evidentes al observar su
+          figura, podríamos enunciar a modo de ejemplo y de modo no taxativo las
+          siguientes:
+          <hr>
+          - Percibe oportunidades <hr>
+          - Flexible <hr>
+          - Dinámico <hr>
+          - Se anticipa a los cambios <hr>
+          - Despierto en la búsqueda <hr>
+          - Visiones amplias <hr> 
+          - Motivación <hr>
+          - Empuje <hr>
+          - Persistente <hr>
+          - Perseverancia <hr>
+          - Pasión <hr>
+          - Hábil para relacionarse / Tenacidad 
+        </p>
+      </div>
+      <div class="container info1">
+        <h4>Las Oportunidades</h4>
+        <p>
+          La palabra oportunidad proviene del latín opportunitas, hace referencia a lo 
+          conveniente de un contexto y a la confluencia de un espacio y un periodo temporal 
+          apropiada para obtener un provecho o cumplir un objetivo. Las oportunidades, por 
+          lo tanto, son los instantes o plazos que resultan propicios para realizar una acción. 
+        </p>
+        <p>
+          Como afirmamos el emprendedor observa primero la oportunidad, y sobre este aspecto 
+          es importante distinguir que esta puede ser vista desde dos perspectivas que van a 
+          llevar a resultados diferentes al emprendedor, por un lado se encuentra la oportunidad 
+          a partir del desarrollo de otra, a partir de su ejecución, el emprendedor se inserta 
+          en el mercado compitiendo directamente con otros que observaron lo mismo que él y por 
+          otro lado están los emprendedores que encuentran la oportunidad a partir de la innovación, 
+          generando nuevos espacios en el mercado ya sea por el desarrollo de un nuevo producto o 
+          servicio, esta segunda es la oportunidad que ejecutada de modo planificado genera a su vez 
+          infinitas posibilidades. 
+        </p>  
+        <p>
+          También en este punto es necesario referirnos al contexto que puede facilitar la actividad 
+          emprendedora o puede entorpecerla o neutralizarla, el contexto socio, político y económico 
+          de cada lugar permitirá potenciar o no las oportunidades.
+        </p>
+      </div>
+      <div class="container info1" id="cont5">
+        <div class="text-cont5">
+        <h4>Las Competencias del emprendedor</h4>
+        <p>Además de la búsqueda de oportunidades, el producto que se ofrece y el mercado meta elegido, 
+          el factor más desequilibrante a la hora iniciar un emprendimiento es el de las características 
+          del emprendedor.
+        </p>
+        <p>Pude que exista un muy buen plan de negocios, ideas, u oportunidades, pero si no hay buenos 
+          emprendedores, es decir, alguien con la capacidad para plasmarlas y llevarlas a la práctica, 
+          muy probablemente no se logrará un emprendimiento con éxito en el largo plazo.
+        </p>
+        </div>
+        <div class="icon4">
+          <img src="./src/images/icon4.png" alt="Emprendedorismo1" id="icon4">
+        </div>
+      </div>
+      <div class="container info1">
+        <h4>Hay tres grupos de competencias emprendedoras:</h4>
+        <p>
+          1) Competencias vinculadas a los logros: <hr>
+          • Búsqueda de oportunidades <hr>
+          • Tener perseverancia <hr>
+          • Tomar riesgos de forma calculada 
+          2) Competencias vinculadas a los compromisos: <hr>
+          • Fijación de objetivos <hr>
+          • Búsqueda de información <hr>
+          • Búsqueda de recursos <hr> 
+          • Planificación y seguimiento 
+        
+          3) Competencias vinculadas al liderazgo: <hr>
+          • Construcción de redes <hr>
+          • Capacidad de persuasión <hr>
+          • Capacidad de trabajo en equipo <hr>
+          • Capacidad de solucionar problemas <hr>
+          • Capacidad de negociación <hr>
+          • Iniciativa <hr>
+          • Autoconfianza <hr>
+          • Excelencia
+        </p>
+      </div>
+      <div class="container info1" id="cont4">
+        <div class="cont4">
+        <h4>Beneficios de ser Dueño de su propio Negocio:</h4>
+        <p>
+          • La oportunidad de ganar el control sobre su destino <hr>
+          • La oportunidad para alcanzar su más elevado potencial <hr>
+          • La oportunidad para realizar lucros ilimitados <hr>
+          • La oportunidad para contribuir a la sociedad y recibir el reconocimiento de sus esfuerzos <hr>
+        </p>
+        </div>
+        <div class="cont5">
+          <img src="./src/images/emprend2.jpg" alt="Emp2" id="empre2">
+        </div>
+      </div>
+      <div class="container info1">
+        <h4>Riesgos de ser Dueño de su propio Negocio</h4>
+        <p>
+          • Rendimientos inciertos
+          • Posibilidad de perder el capital invertido <hr>
+          • Tener que trabajar muy duro durante largas horas, sin tener días feriados, sábados ni domingos <hr>
+          • Tener una vida sacrificada hasta que el emprendimiento obtenga resultados rentables <hr>
+          • Asumir grandes responsabilidades <hr>
+        </p>
+      </div>
+      <div class="container info1">
+        <h4>El Valor de una Idea</h4>
+        <p>
+          Un proyecto de empresa se desarrolla siempre en torno a una idea previa de negocio. Su selección es el 
+          punto básico de partida. El emprendedor deberá realizar una serie de estudios para asegurarse la 
+          viabilidad de la idea de negocio que ha seleccionado.
+        </p>
+        <p>
+          La idea vendrá, además, determinada por la capacidad de inversión de la persona y por sus conocimientos sobre 
+          mercados, sectores o negocios determinados.
+        </p>
+        <p>  
+          Partiendo de estas premisas, la idea surge cuando la persona siente o capta una nueva necesidad aún no satisfecha 
+          por el mercado, o una modificación de una necesidad ya existente que puede significar una oportunidad de negocio. 
+          Por otro lado, no se debe dudar de renunciar a una idea cuando se determina que no va a dar los resultados deseados. 
+          Es preferible cambiar la idea a tiempo y no insistir sobre un proyecto que está dando señales claras de su 
+          dificultosa viabilidad.
+        </p>
+      </div>
+      <div class="container info1">
+        <p>
+          Cuando estamos convencidos de que nuestra idea es buena, lo que necesitamos hacer es profundizar en el ¿qué? 
+          ¿para quién? ¿cómo? ¿cuándo? ¿cuánto?¿dónde? ..., cuestiones que van a determinar la factibilidad del proyecto, 
+          es decir transformar la idea-proyecto en nuestra joven y nueva empresa.
+        </p>
+        <p>
+          Es importante advertir en este tema que el error más común con el que se tropieza una idea es considerar que la 
+          idea por sí misma es suficiente como para ser un negocio exitoso, como bien se sabe de ideas está lleno el mundo 
+          y lo que marca la diferenciación principal son las personas que logran compatibilizar la oportunidad con la idea, 
+          armando de modo planificado el modelo de negocio que se pretende alcanzar y lo ejecutan.
+        </p>
+        <p>
+          Esto es ni más ni menos que el plan de negocios, que es importante como instrumento, no como fin último, dado que 
+          es el mapa a seguir en el desarrollo del negocio. Aporta al emprendedor la organización de sus ideas, para dimensionar 
+          las diferentes aristas con las que deberá enfrentarse durante su ejecución.
+        </p>
+      </div>
+      <div class="container info1">
+        <h4>Ecosistema del Emprendedor</h4>
+        <p>
+          La necesidad de un cambio de modelo productivo en nuestra economía parece un punto de consenso en nuestra sociedad.
+        </p>
+        <p>
+          En dicho cambio las políticas de los Estados, las universidades, las distintas entidades públicas, el sector privado, 
+          los consumidores y todos aquellos que de una manera u otra influyen en la generación de ese cambio han de unir sus 
+          capacidades y sus iniciativas para aportar soluciones creativas que materialicen las palabras en hechos.
+        </p>
+        <p> 
+          Parece que todos hoy miramos a los emprendedores como una parte importante en la búsqueda de ese nuevo modelo productivo.
+        </p>
+        <p>
+          Nos hemos unido distintos agentes para tratar de crear un “Ecosistema Emprendedor”, entendiendo por tal, un conjunto 
+          de relaciones complejas entre entidades y personas emprendedoras con sus entornos: tecnológicos, académicos, sociales, 
+          políticos y económicos, estimulantes para el desarrollo de iniciativas emprendedoras.
+        </p>
+      </div>
+      <div class="container info1">
+        <p>
+          Debemos tener presente también el concepto de sostenibilidad de la acción emprendedora: en nuestra experiencia, el éxito 
+          de dicha sostenibilidad está basado en el trofismo, donde cada estrato da alimento al siguiente completando así la cadena 
+          trófica.
+        </p>
+        <p>
+          Dos conceptos, el de Ecosistema y el de sostenibilidad, son la base de todos los sistemas de innovación y emprendimiento que 
+          funcionan adecuadamente.
+          Entendemos que la acción de emprender es un proceso evolutivo que se inicia en el momento en el que surge una idea y se culmina 
+          cuando ésta alcanza su máximo desarrollo y no meramente como la acción de iniciar un proyecto.
+          Visualizamos el emprendimiento como un proceso en cadena en la que cada eslabón sería un estadío distinto del proyecto, así, 
+          según se avanzase en la cadena la madurez del proyecto iría aumentando, transformándose gradualmente desde una idea inicial 
+          difusa hasta una empresa consolidada. Gráficamente se podría representar de la siguiente manera:
+        </p>
+      </div>
+      <div class="container info1">
+        <img src="./src/images/imgcuadro.png" alt="cuadro1" id="cuad1">
+      </div>
+      <div class="container info1">
+        <p>
+          A lo largo de los años, muchas teorías han tratado de explicar de qué se trata un emprendedor.
+        </p>
+        <p>
+          Algunas, ponen el foco en la persona y sus cualidades. Otras se centran más en el entorno y las condiciones que permiten que 
+          determinados contextos sean más prolíferos para la aparición y el desarrollo de distintos tipos de emprendimientos y empresas.
+        </p>
+        <p>
+          Sin embargo, el devenir histórico del concepto ha ido viendo la necesidad de instalar como más plausible la combinación de ambas: 
+          la determinación del contexto social, cultural, económico y las características y competencias individuales, que desarrolladas a 
+          través de la formación, permiten ampliar la base emprendedora de cualquier sociedad.
+        </p>
+        <div class="cont6">
+          <img src="./src/images/icon3.png" alt="Icon3" class="img3">
+        </div>
+        </div>
+      <div class="container info1">
+        <h5>Cuando hablamos de ecosistema del emprendedor nos referimos a:</h5>
+        <p>
+          • La globalización de lo socio-económico- político y cultural que genera el marco desde el cual se pueden pensar y hacer efectivas distintas posibilidades de negocios: exportaciones, importaciones, nuevos mercados, etc. <hr>
+          • Las condiciones generales del país o las provincias: políticas públicas de gobierno, programas gubernamentales de impulso, apoyo y soporte técnico y financiero, infraestructura, mercado, instituciones, normas sociales y culturales, etc. <hr>
+          • Crecimiento económico nacional y/o provincial: PBI, empleo e innovación son los ejes principales; es necesario aclarar que el número de emprendimientos crece en la medida en que lo hace la economía del entorno. <hr>
+          • Dinámica propia de los negocios: que tiene que ver con la cantidad de empresas que nacen y se expanden y la cantidad de empresas que se achican y mueren. <hr>
+          • Oportunidades de negocios: que tienen que ver tanto con la existencia objetiva como de la percepción de las mismas.
+          • Capacidad emprendedora: actitud emprendedora, aptitud emprendedora y percepción que claro está tiene mayor relación con las variables de índole personal del emprendedor, como así también sus características.
+          • Condiciones específicas para el desarrollo de los emprendedores: acceso al capital, apertura del mercado interno, acceso a la infraestructura, educación y entrenamiento, transferencias de tecnologías, acceso a la infraestructura legal y comercial etc. <hr>
+        </p>
+      </div>
+      <div class="container info1">
+        <p>Para que un emprendimiento pueda surgir en la semilla de una idea, crecer, desarrollarse hasta concretarse en la 
+          cosecha de sus frutos, es necesario: un emprendedor que genere desde sus aptitudes y creatividad una idea, la que a 
+          través de sus propias actitudes y el impacto de un hábitat propicio pueda planificarse y llevarse a la práctica.
+        </p>
+        <p>
+          Un emprendedor con mejores condiciones de su ecosistema para formarse, crecer y desarrollarse, logrará siempre mejores 
+          resultados particulares y generales que aquel que el entorno le obstaculiza la concreción de sus objetivos y metas. 
+          Una mezcla exacta de talento, habilidades y posibilidades hacen, sin dudas, que los éxitos sean la constante entre los 
+          emprendedores.
+        </p>
+      </div>
+      <div class="container info1" id="cont7">
+        <div class="cont7">
+          <h4>El asociativismo</h4>
+          <p>
+            El asociativismo es una construcción compleja, que se desarrolla en el seno de un grupo humano, basada en la ayuda mutua 
+            y el esfuerzo propio. Para que esto suceda debe existir en una empresa: la gestión fundada en la racionalidad empresaria, 
+            equilibrada con los objetivos sociales.
+          </p>
+          <p>
+            La eficiencia, resultados obtenidos en función de los recursos disponibles, y la eficacia, lograda en base a los objetivos 
+            establecidos, deben ser los pilares de todo emprendimiento asociativo.
+          </p>
+        </div>
+        <div class="cont8">
+          <img src="./src/images/img4.jpg" alt="log5" id="img5">
+        </div>
+      </div>
+      <div class="container info1">
+        <h5>¿Por qué fomentar el asociativismo? En principio podríamos fundamentar desde tres perspectivas complementarias:</h5>
+        <p>
+          • Perspectiva Administrativa: esquemáticamente se podría pensar en tres grandes campos en la gestión de una empresa: 
+          Administración, Venta y Producción. En este sentido la presencia de tres socios suponen poder asignar roles en algunos 
+          de estos campos. “Cada tarea con su responsable, y cada responsable con su tarea” <hr>
+          • Perspectiva Participativa: El devenir de la empresa exige permanentemente la toma de decisiones, lo óptimo es que las 
+          mismas se tomen con mutuo acuerdo de todos los socios, la participación genera decisiones de calidad, dónde cada socio 
+          aporta su perspectiva. También cuando esto no sucede, un tercer socio permite generar una suerte de desempate en 
+          aquellos momentos en donde no se puede llegar al pleno conceso. <hr>
+          • Perspectiva Motivacional: Los vaivenes de la vida empresarial (comenzando desde el ingreso mismo al Programa Nuevas 
+          Empresas de Jóvenes Sanluiseños) implica muchas veces dificultades y desafíos que como grupos se deben sortear, en este 
+          sentido cuando la motivación de algunos de los socios se viera afectada sus compañeros cumple la función de sostén que 
+          es repartida entre los restantes socios. “cuando hay que levantar a un socio caído, siempre cuatro manos son mejor que 
+          dos”. Podemos considerar que la elección de un “buen” grupo social es la clave para la consecución de los objetivos. 
+          Es importante valorar quiénes nos reunimos y con qué objetivos lo hacemos para comenzar este viaje hacia la empresa 
+          propia.
+        </p>
+      </div>
+      <div class="container info1">
+        <h5>“El Asociativismo es una herramienta que permite potenciar las capacidades individuales y evolucionar hacia +
+          organizaciones que favorezcan el desarrollo personal y del conjunto.”</h5>
+      </div>
+      <div class="container info1">
+        <h4>Ventajas del asociativismo</h4>
+        <p>
+          • Salir del aislamiento y el individualismo. <hr>
+          • La información y capacitación que se brinda, permite potenciar los recursos técnicos, económicos y humanos, 
+          de los miembros del grupo, a la vez que los mismos aportan sus conocimientos y experiencia, esto genera una 
+          sinergia en el proceso de gerencia de la empresa <hr>
+          • Acceso a la financiación, es condición fundamental formar un grupo asociado de por lo menos 2 personas o más 
+          para acceder al Programa, ello permitirá incorporar infraestructura, máquinas y equipos a los que solos no se podría. <hr>
+          • Infraestructura, con el aporte de 2 o más socios es muy probable integrar bienes que estructuren la empresa.
+        </p>
+      </div>
+      <div class="container info1">
+        <h4>Desventajas o amenazas del asociativismo</h4>
+        <p>
+          • Prejuicios asociativos por anteriores frustraciones. <hr>
+          • Falta de capacitación y “gimnasia” para el trabajo en Equipo. <hr>
+          • Temor a exponerse ante otras personas. <hr>
+          • Toma de decisiones fuera del ámbito familiar. <hr>
+          • Influencia negativa a partir de “consejos” de terceros. <hr>
+          • Evitar el controlar y ser controlado por los demás. <hr>
+          • Temor y dudas ante lo desconocido.
+        </p>
+      </div>
+      <div class="container info1">
+        <h4>Desventajas a la hora de asociarse</h4>
+        <p>
+          Las formas jurídicas no plantean en sí mismas problemas para su implementación si fueron adoptadas en función de las 
+          necesidades del grupo. En la mayoría de los casos los problemas se suscitan precisamente en las relaciones humanas y 
+          en el fortalecimiento del grupo. Si el grupo humano no está preparado para llevar adelante un emprendimiento asociativo 
+          no habrá forma jurídica que lo resista.
+        </p>
+        <p>
+          Cuando se dan estas situaciones son fallas propias de los integrantes del grupo, no se puede salvar responsabilidades 
+          echando las culpas a tal o cual forma jurídica ya que en la mayoría de estos casos, seguramente el fracaso se hubiera 
+          producido igual sea cual fuere la forma asociativa adoptada.
+        </p>
+        <p>
+          Es momento de superar esos prejuicios y decidirse al trabajo en conjunto, de capacitarse y prepararse para enfrentar los 
+          obstáculos y conflictos que esto sugiere, pero es hora también de trabajar por el desarrollo sustentable, por la 
+          revalorización de la cultura del trabajo asociativo, por el desafío que implica el desarrollo de grupos societarios, 
+          la mayoría tiene claro que solo no se puede, sólo les cuesta encontrar los mecanismos que permitan unir fuerzas y potenciar 
+          sus capacidades. Se debe reemplazar intereses personales por crecimiento grupal, egoísmo por ayuda mutua, individualismo por 
+          solidaridad.
+        </p>
+      </div>
+      <div class="container info1">
+        <h4>Factores a tener en cuenta al seleccionar la forma asociativa</h4>
+        <p>
+          Cada forma asociativa tiene características particulares y lo que en todo caso se debe hacer es elegir la que mejor se adapta 
+          a las expectativas y propósitos del grupo. Durante el proceso de selección de la forma asociativa más adecuada a los objetivos 
+          del grupo, es necesario analizar algunos factores que serán determinantes para una correcta elección.
+          ¿Por qué?, ¿Para qué?, ¿Quiénes? y ¿Cómo?, son preguntas básicas que deben plantearse los miembros del grupo antes de optar 
+          por una forma asociativa.
+          Tener en claro estos y otros aspectos relacionados con los objetivos del grupo y de la organización permitirá elegir la forma 
+          asociativa adecuada y no cometer errores que sólo ocasionarán pérdidas de tiempo y frustraciones a corto plazo.
+        </p>
+      </div>
+      <div class="container info1">
+        <h4>Reflexionemos sobre nuestra capacidad emprendedora</h4>
+        <p>Aquí queremos plantear un ejercicio para hacer entre los socios. El mismo consta de 33 enunciados breves, se sugiere leerlos 
+          cuidadosamente cada uno y decidir cuál los describe en la forma más exacta. Deben responder “lo que le sale de la cabeza” y 
+          no lo que considera “lo correcto”, este es un ejercicio de reflexión, para saber en qué aspectos debemos poner mayor atención.
+        </p>
+        <p>
+          Los invitamos a realizar el formulario que se encuentra en el menu de inicio, para medirse en puntaje que tan emprendedor bueno pueden ser.
+        </p>
+      </div>
+      <div class="container info1" id="cont9">
+        <div class="cont10">
+          <h4>Errores comunes de los emprendedores</h4>
+          <p>
+            Para la mayoría de los emprendedores hay muchas cosas nuevas en la puesta en marcha de un negocio. Algunos son expertos en un producto o 
+            servicio y son nuevos en el mundo de los negocios. Otros conocen la teoría de los negocios pero se enfrentan por primera vez a la toma de 
+            decisiones sin superiores, muchos fracasan en sus primeras experiencias. Aquí van los errores más comunes que cometen los emprendedores, 
+            para que reconozcas en cuáles estás más en riesgo de caer y puedas evitarlos a tiempo.
+          </p>
+        </div>
+        <div class="cont11">
+          <img src="./src/images/img5.jpg" alt="logo34" id="img6">
+        </div>
+      </div>
+      <div class="container info1">
+        <h5>Poco foco</h5>
+        <p>
+          No es fácil arrancar con un negocio y construir una base de clientes sustentable si intentas dar todo sobre todo. Si no concentrás tus 
+          esfuerzos en uno o dos productos o en un concepto claro que deje afuera otras actividades, te va a resultar imposible ser eficiente y lograr resultados.
+          Falta de visión de negocios. Muchos emprendedores creen que con hacer bien un oficio, trabajo o producto es suficiente. Ningún emprendedor puede triunfar sin 
+          hacer marketing, planificar, vender, comprar, cobrar (o tener alguien de mucha confianza que lo haga por él).
+        </p>
+        <hr>
+        <h5>Poca energía</h5>
+        <p>
+          Las ganas, el entusiasmo, el tiempo de dedicación a un negocio no son todo, pero son una base fundamental. Es imposible ser un emprendedor de a ratos o hacer 
+          crecer un negocio sin transmitir energía.
+        </p>
+      </div>
+      <div class="container info1">
+        <h5>Copiar negocios sin hacer un análisis propio</h5>
+        <p>
+          Suponer que porque un negocio funciona, otro va a hacerlo suele ser una trampa en la que caen muchos emprendedores, tanto cuando copian un negocio que funciona 
+          en otro país (pero no en el contexto local!) o cuando replican un negocio que ya puede haber cumplido su ciclo como una cancha de paddle o un cibercafé. 
+          Es necesario siempre hacer un plan propio que contemple el lugar, el momento, el emprendedor, la inversión y todo lo que determina cómo va a funcionar un negocio.
+        </p>
+        <h5>No considerar el largo plazo</h5>
+        <p>
+          Lograste poner en marcha un negocio, ¿pero después qué? Muchos emprendedores quedan encerrados en su propia trampa: crearon un negocio que les demanda todo, 
+          pero si se van éste termina. Es importante pensar en las posibilidades de salida, como la venta o fusión con otro negocio, o tener personas capacitadas en quienes 
+          delegar el trabajo diario.
+        </p>
+      </div>
+      <div class="container info1">
+        <h5>Subestimar el monto de la inversión inicial</h5>
+        <p>
+          Es común pensar que con poco dinero alcanzará para lo previsto y, en medio del camino, descubrir que el dinero no alcanza y que tal vez se pierda lo que ya se 
+          invertió. Planificar con cuidado los gastos y estimar con cautela la generación de ingresos es la forma de evitar este error.
+        </p>
+        <h5>Gastar demasiado en aspectos no claves del negocio</h5>
+        <p>
+          Al comienzo, es fácil dejarse seducir por la decoración de la oficina, la impresión de la papelería a todo color, los almuerzos de negocios, los celulares 
+          multifunción, las computadoras a todo trapo. Pero ¿son esenciales para el negocio? Si el emprendimiento comienza a dar resultados siempre es posible mejorar estos 
+          aspectos a veces superfluos. Evaluá todos los gastos con cuidado, para asegurarte de que sean verdaderas inversiones (es decir, que te ayuden a generar ganancias).
+        </p>
+        <h5>No considerar el costo del trabajo propio</h5>
+        <p>
+          Muchos emprendedores evitan considerar su trabajo como un costo del proyecto. Aunque estés dispuesto a trabajar gratis por hacer crecer tu proyecto, es necesario 
+          que consideres tu trabajo como un costo para la empresa. De esta forma podrás separar tus ingresos entre los que provienen de tu trabajo y los que provienen del 
+          resultado del negocio. Considerá cuánto deberías pagarle a una persona para que haga tu trabajo. Hacé lo mismo si recibís ayuda de personas de tu familia o amigos. 
+          Aunque no lo pagues, es un costo que el negocio debería estar en condiciones de afrontar.
+        </p>
+      </div>
+      <div class="container info1">
+        <h5>Instalarse en el lugar equivocado</h5>
+        <p>
+          La ubicación de un negocio, sobre todo si es minorista, puede determinar su éxito o fracaso comercial, pero también puede liquidar rápidamente sus finanzas. 
+          Es necesario al inicio encontrar el lugar que equilibre costos con posibilidades comerciales.
+        </p>
+        <h5>No separar el capital personal del capital del negocio</h5>
+        <p>
+          Arrancar sin armar una sociedad es más rápido y menos costoso. Pero si el negocio implica riesgos o el patrimonio del emprendedor es importante, es recomendable que 
+          se manejen en forma separada para poner un límite al capital involucrado en el negocio, en caso de juicio, quiebra u otras dificultades.
+        </p>
+        <h5>No separar la vida personal del emprendimiento</h5>
+        <p>
+          En los pequeños emprendimientos es habitual que se involucren amigos, novios, esposos, hermanos y otros familiares, ya sea como inversores y trabajadores o como 
+          ayudantes o asesores ocasionales. Evitá que los conflictos o situaciones personales afecten el desarrollo del negocio.
+        </p>
+      </div>
+      <div class="container info1">
+        <h5>Invertir más de lo que las finanzas personales permiten</h5>
+        <p>
+          Algunos emprendedores creen tan firmemente en su sueño que son capaces de jugarse todo por él. Cuidado, no se gana sin apostar, pero no podés poner en riesgo tu futuro 
+          y el de tu familia. Asegúrate de hacer un buen análisis de tus finanzas personales para evaluar cuánto dinero podés poner en el negocio además de tu trabajo. Tené en 
+          cuenta el escenario más pesimista y asegúrate de tener dónde quedar parado si te va mal, como para poder volver a arrancar en el futuro.
+        </p>
+        <h5>Tener más socios de los que el negocio puede soportar</h5>
+        <p>
+          Más socios no sólo es más personas entre quienes repartir ganancias (más allá del aporte de trabajo, dinero o conocimiento que puedan hacer), sino también más gente con 
+          la que ponerse de acuerdo. Los grupos muy grandes suelen fracasar.
+        </p>
+        <h5>No considerar en el proyecto el pago de impuestos</h5>
+        <p>
+          El Estado en diversas formas, es uno de los socios principales de todas las empresas, y no le gusta que lo dejen afuera. Considerá cómo va a ser tu inscripción o la de 
+          tu empresa y qué impuestos les corresponderá pagar. Incorporá las cifras en tus proyecciones. El monotributo simplifica mucho las cosas.
+          Confundir ganancia con efectivo. Dinero en la caja no significa ganancias. Estas surgen después de hacer todos los pagos, y suelen demorarse en un negocio que se inicia. 
+          ¡No te confundas!
+        </p>
+        <h5>No tener un plan y lanzarse “a probar”</h5>
+        <p>
+          La suerte no puede hacerlo todo. Un negocio exitoso es el fruto de una planificación cuidadosa, que por lo general se refleja en un plan de negocios.
+        </p>
+      </div>
+      <div class="container info1" id="ult">
+        <p>
+          Muchos de estos errores comunes están tratados con más detalle en distintos capítulos de la guía, para ayudarte a encontrar tu camino sin caer donde 
+          otros ya cayeron. Sin embargo, es fundamental que pierdas el miedo a equivocarte.
+        </p>
+        <p>
+          El camino del emprendedor es un camino lleno de riesgos. Lo importante es que sepas evaluar las consecuencias de tus decisiones, tengas en claro 
+          siempre el peor escenario (¿qué es lo peor que puede pasar?), evites los errores evitables y te metas de lleno en los errores que te hacen aprender.
+        </p>
+      </div>
+      <div class="footer-container">
+        <p>&copy;2024 - Design by Renzo Gomez</p>
+      </div>
+    </section>
+    <!-- Boostrap 3.5 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

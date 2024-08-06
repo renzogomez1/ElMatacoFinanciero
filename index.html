@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+  <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+  <title>El Mataco Financiero</title>
+</head>
+
+<body class="vh-100 overflow-hidden">
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <img src="./src/images/mataquito.png" alt="logoMata" class="logo">
+
+      <a class="navbar-brand me-auto" id="titulo-navbar" href="#">El Mataco Financiero</a>
+      
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">El Mataco Financiero</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2 active" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="./sistema.html">Sistema</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" id="item-submenu">Creacion Proyecto</a>
+                <ul class="sub-item" id="submenu">
+                  <li class="item-submenu"><a href="./parte1.html" class="nav-item mx-lg-2">Emprendedorismo</a></li>
+                  <li class="item-submenu"><a href="./parte2.html" class="nav-item mx-lg-2">Estudio de Mercados</a></li>
+                  <li class="item-submenu"><a href="./parte3.html" class="nav-item mx-lg-2">Ingenieria de Proyecto</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link mx-lg-2">Test Emprendedor</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a href="#" class="ejemplo-button">Modelo</a>
+      <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+  <!-- Fondo -->
+  <section class="hero-section">
+    <div class="container titulo">
+      <h2>El Mataco</h2> 
+      <h2>Financiero</h2>
+      <h5>Te ayudamos a armar tu proyecto y a tomar decisiones acertadas</h5>
+    </div>
+    <div class="container slider">
+      <div class="sliderimg1">
+        <img src="./src/slider1/8.jpg" alt="slider" id="img-slider">
+        <script src="slider-1.js"></script>
+      </div>
+    </div>
+    <div class="container info3">
+      <h4>Como surgio la idea de este Proyecto<h4>
+      <p>
+        Este proyecto nació en una clase del área contable con los alumnos el año pasado cuando se desarrolló la aplicación MAGDA 4.0, entonces se llegó a la conclusión 
+        que la educación financiera es muy importante para la sociedad. El profesor genera en los estudiantes el interrogante sobre cómo administran ellos sus finanzas,
+         más específicamente de cómo era la economía personal y la de sus propias familias.
+      </p>
+      <p>
+        Esto fue suscitando que los estudiantes comenzaran a contar distintas experiencias, y llegan a la conclusión que ninguna de las familias usaba una herramienta 
+        tecnológica para administrar sus recursos financieros. Generalmente llevan sus finanzas en un cuaderno tapa blanda con la lapicera o lápiz que encuentren, sólo 
+        suman las obligaciones que deben pagar en el mes, y lo que quede es para sobrevivir lo que resta del mes.
+        Reflexionan que las deudas cada vez son mayores, tarjetas de crédito, préstamos personales para pagar deudas y así va creciendo esa inmensidad de deudas que 
+        suelen ser impagables. Finalmente concluyen en que todo el tiempo están pagando deudas con deudas y se hace insostenible la administración del dinero en la 
+        familia, y que esto impide realizar el ahorro. 
+      </p>
+    </div>
+    <div class="container info3">
+      <p>
+        En palabras del profesor; “Sabemos que la economía actual es muy cambiante, que nuestros ingresos hay que adaptarlos a los cambios de precios (gracias a la 
+        inflación, que cada vez es más alta, índice que afecta directamente a las familias) No vamos a entrar en el análisis de un índice macroeconómico ya que no 
+        somos especialistas para tal fin”.
+      </p>
+      <p>
+        Entonces dado la situación económica y las finanzas de las familias, luego de haber realizado un estudio de mercado, pudimos concluir en que la mayoría no utiliza 
+        una herramienta para administrarse de manera eficiente, y de ello nació MAGDA 4.0, entonces se desea seguir trabajando en la realización de herramientas necesarias 
+        para la toma de decisiones de manera informada y consciente para encarar cualquier tipo de proyecto. </p>
+      <p>
+        Si bien existen aplicaciones en las distintas tiendas de Android o iOS para la administración de las finanzas y también en distintas aplicaciones de entidades 
+        bancarias, vemos la necesidad de que exista una aplicación GRATUITA que sea intuitiva para cualquier persona, que abarque cualquier rango de edades, lograr que 
+        la aplicación la usemos las 24 hs del día, en dónde veamos una foto de nuestros ingresos y gastos, como así también de nuestras inversiones, poder ver en qué 
+        gastamos, como así también una proyección teniendo en cuenta distintas variables económicas (paritarias e inflación, entre otras cosas).
+      </p>
+    </div>
+    <div class="container info3">
+      <p>
+        Atento a esto, a la importancia de la educación financiera,  proponemos armar una herramienta para aquel potencial emprendedor (página web) en dónde cualquier 
+        usuario pueda armar un plan de negocios, cargar la información en dicha página, y que la misma pueda arrojar resultados de la viabilidad financiera de su proyecto, 
+        si es rentable o no, Se analizarán índices financieros para la toma de decisiones (VAN, TIR, PRI, y punto de equilibrio entre otros). Asimismo contará con material 
+        escrito que sea de fácil comprensión y que servirá de asesoramiento para el armado de un proyecto. Y además cabe destacar que tampoco existe en la web una página de 
+        manera gratuita que sirva para tal fin.
+      </p>
+      <p>
+        ¿Cómo lo lograremos? Apostando al asesoramiento del equipo de coordinadores y estudiantes de la Escuela Técnica N° 30 “Fragata Presidente Sarmiento”, contamos con un 
+        equipo de alto rendimiento y profesionalismo, buscamos realizar una alfabetización financiera a través de una página web con el asesoramiento adecuado. Sabemos del 
+        agotamiento que generan las interminables opciones que hay que marcar para que nunca nos atienda nadie, sólo una máquina y computadora, puede sonar ambivalente, 
+        pero eso es lo que buscamos de una página web, contar con una herramienta que sea atendida y estén disponibles para la mesa de ayuda o asesoramiento, quienes vamos a 
+        estar detrás de la página web para asesorar su utilización, para así lograr un orden y control, que hoy más del 90% de los que deseen emprender no saben como armar un 
+        plan de negocio para la toma de decisiones de manera eficiente. La intención de la página web es que ayude a mejorar y hacerse de una administración más eficiente. 
+        Estamos convencidos que será de suma utilidad para nosotros, para nuestras familias, para administrar de manera eficiente la economía y las finanzas de los proyectos, 
+        en cuánto a viabilidad técnica, legal y económica, a través de la herramienta El Mataco Financiero.
+      </p>
+      <p>
+        Hemos logrado ver la necesidad en nuestra sociedad, ahora nos ocuparemos de resolver esta necesidad social tan básica como armar de manera eficiente su proyecto con 
+        finalidad social o no.
+      </p>
+    </div>
+    <div class="container slider">
+      <div class="sliderimg1">
+        <img src="./src/slider2/15.jpg" alt="slider1" id="img-slider1">
+        <script src="slider-2"></script>
+      </div>
+    </div>
+    <div class="container info3">
+      <h5>La responsabilidad social de una página web sobre manejo de finanzas familiares es múltiple:</h5>
+      <ul class="lista-num">
+        <li>
+          Fomentar la educación financiera: Proporcionar información y herramientas para que las familias tomen decisiones informadas sobre sus finanzas.
+      </li>
+      <li>
+        Promover la transparencia y honestidad: Incentivar a las familias a ser transparentes y honestas en sus finanzas, evitando deudas y gastos excesivos.
+      </li>
+      <li>
+        Apoyar la planificación y ahorro: Ayudar a las familias a establecer metas financieras y planificar para el futuro.
+      </li>
+      <li>
+        Considerar el impacto ambiental: Incluir información sobre cómo las decisiones financieras pueden afectar el medio ambiente y promover prácticas sostenibles.
+      </li>
+      <li>
+        Accesibilidad e inclusión: Asegurar que la información sea accesible para todas las familias, independientemente de su nivel socioeconómico o educativo.
+      </li>
+      <li>
+        Privacidad y seguridad: Proteger la información financiera de las familias y mantener la confidencialidad.
+      </li>
+      <li>
+        Actualización y relevancia: Mantener la información actualizada y relevante para reflejar los cambios en el entorno económico y financiero.
+      </li>
+    </ul>
+    <p>
+      Al asumir esta responsabilidad social, la página web puede tener un impacto positivo en la vida de las familias y contribuir a una sociedad más informada y sostenible.
+    </p>
+    </div>
+    <div class="container info3">
+      <h4>
+        Objetivos:
+      </h4>
+      <ul class="listas">
+        <li>
+          Proyecto que sienta bases en la formación de los estudiantes, en donde se busca potenciar los conocimientos de los mismos y llevar a la práctica las herramientas 
+          necesarias para poder desarrollar el presente proyecto.
+        </li>
+        <li>
+          Poder colaborar con la Alfabetización Financiera.
+        </li>
+        <li>
+          Crear una página web a través de las TICs, y utilizar la inteligencia artificial de manera eficiente ya que contamos con esa herramienta para el armado de la misma.
+        </li>
+        <li>
+          Elaborar un proyecto interdisciplinario entre las áreas técnicas y de Lengua.
+        </li>
+        <li>
+          Establecer las bases y redes necesarias para tal proyecto.
+        </li>
+        <li>
+          Lograr como producto de dicho proyecto una página web sea  una herramienta práctica de utilización doméstica para el uso dinámico, intuitivo, de fácil comprensión 
+          para la eficiencia en la administración y armado de un proyecto y que servirá para la toma de decisiones en base a la información que se analiza.
+        </li>
+        <li>
+          Implementar la EDUCACIÓN FINANCIERA o ALFABETIZACIÓN FINANCIERA en los adolescentes, y que lo transmitan a sus familias. 
+        </li>
+        <li>
+          Desarrollo de TICs en las instituciones.
+        </li>
+      </ul>
+    </div>
+    <div class="container info3">
+      <h4>Contexto:</h4>
+      <h5>“La necesidad de la alfabetización financiera se hace cada vez más necesaria en nuestra sociedad”</h5>
+      <p>
+        Los resultados obtenidos del estudio mercado fueron suficientes para poder verificar la falta de organización en la administración eficiente de las finanzas personales y 
+        familiares esto surgió en el proyecto MAGDA 4.0, y entendiendo también la falta de desinformación para el armado eficiente técnico para el armado de un proyecto en la sociedad, 
+        y que también fue un punto en dónde se pudo verificar en distintos proyectos que llegaron a la Instancia Nacional sin haber realizado un estudio de ingresos y costos y que 
+        tenían una finalidad social.
+      </p>
+      <p>
+        Luego de haber realizado un intensivo estudio de mercado, en dónde se puede ratificar la falta de organización y administración de las finanzas personales y familiares, y la falta 
+        de información de como armar un proyecto de manera sencilla, vemos necesario la implementación de una herramienta informática al alcance de todo tipo de usuario en el cuál pueda 
+        armar y volcar toda la información en dicha herramienta y pueda tomar decisiones eficientes para lograr los objetivos esperados, como así también realizar el análisis de la viabilidad 
+        financiera (si el proyecto va a ser potencialmente rentable o no).
+      </p>
+      <p>
+        Vemos necesaria esta herramienta por la economía volátil en la cual vivimos día a día.
+      </p>
+      <p>
+        En la economía actual es fundamental una eficiente administración de los recursos y gastos (ingresos y egresos), ya que la volatilidad constante de los precios hace muy difícil poder 
+        anticipar los gastos o realizar una planificación del presupuesto mensual, semanal y diario.
+      </p>
+      <p>
+        Los métodos utilizados son herramientas para recolectar datos a través de un estudio de mercado.
+      </p>
+      <p>
+        herramienta informática accesible para todas las personas que deseen administrar sus finanzas de manera eficiente.
+      </p>
+    </div>
+    <div class="container info3">
+      <h4>¿Qué es la educación financiera para emprendedores?</h4>
+      <p>
+        La educación financiera para emprendedores trata de aprender los conceptos básicos de la administración de finanzas empresariales, tales como la gestión de efectivo, la inversión y el presupuesto. 
+        También implica comprender los informes financieros y las métricas clave para evaluar el éxito de tu negocio.
+      </p>
+    </div>
+    <div class="container info3">
+      <h4>¿Por qué es importante para los emprendedores?</h4>
+      <p>
+        La educación financiera es importante para los emprendedores porque les permite tomar decisiones financieras informadas y mantener el control de sus finanzas empresariales. Si no comprendes los 
+        conceptos básicos de la educación financiera, es fácil caer en trampas financieras que pueden dañar tu negocio. Aquí hay algunas razones por las que la educación financiera es importante para los 
+        emprendedores:
+      </p>
+      <li>Toma de decisiones informadas</li>
+      <p>
+        Los emprendedores deben tomar muchas decisiones financieras importantes en su negocio, como la inversión de capital, el presupuesto, la gestión de flujo de caja, entre otras. La educación financiera 
+        les proporciona las herramientas y los conocimientos necesarios para tomar decisiones informadas y hacer crecer su negocio de manera efectiva.
+      </p>
+      <li>Manejo del riesgo</li>
+      <p>
+        Los emprendedores están expuestos a diferentes tipos de riesgos financieros, como la deuda, la falta de liquidez y los cambios en el mercado. La educación financiera les permite identificar y mitigar 
+        estos riesgos, lo que les permite operar su negocio de manera más eficiente y minimizar las posibles pérdidas.
+      </p>
+      <li>Crecimiento empresarial</li>
+      <p>La educación financiera es esencial para el crecimiento empresarial. Los emprendedores pueden utilizar sus conocimientos financieros para planificar su expansión y diversificación, atraer inversores, 
+        mejorar la rentabilidad y maximizar el valor de su negocio.
+      </p>
+      <li>Ahorro de dinero</li>
+      <p>Puede ayudar a los emprendedores a ahorrar dinero a través de la gestión eficiente de los gastos y la optimización de los ingresos. También pueden aprender a utilizar herramientas financieras como el 
+        crédito y las inversiones para hacer crecer su negocio y aumentar su rentabilidad.
+      </p>
+      <p>
+        La educación financiera es crucial para los emprendedores que quieran tener éxito en su negocio. Les proporciona las herramientas y los conocimientos necesarios para tomar decisiones informadas,
+         gestionar el riesgo, impulsar el crecimiento empresarial y ahorrar dinero. La educación financiera es una inversión importante para cualquier emprendedor que quiera tener éxito en el mundo empresarial.
+      </p>
+    </div>
+    <div class="container info3">
+      <h4>Alfabetización:</h4>
+      <p>
+        La alfabetización, en su sentido más amplio, se refiere a la capacidad de leer y escribir. Sin embargo, en un contexto moderno, también incluye la comprensión y el uso efectivo de información en diversas 
+        formas, incluyendo la alfabetización digital, financiera y emocional.
+      </p>
+    </div>
+    <div class="container info3">
+      <p>Alfabetización Emocional:</p>
+      <p>
+        Comprensión de las Emociones: Una persona que está alfabetizada emocionalmente tiene una mejor comprensión de sus propias emociones y las de los demás. Esto le permite mantener la ecuanimidad en situaciones difíciles.
+      </p>
+      <p>Gestión del Estrés: La alfabetización emocional incluye habilidades para gestionar el estrés y las emociones negativas, lo cual es esencial para mantener la ecuanimidad.
+      </p>
+    </div>
+    <div class="container info3">
+      <p>Alfabetización General:</p>
+      <p>
+        Acceso a Información: La alfabetización permite a las personas acceder a información que puede ayudarles a comprender y manejar mejor sus emociones y situaciones de vida. Esto acceso al conocimiento puede 
+        promover una mayor ecuanimidad.
+      </p>
+      <p>
+        Pensamiento Crítico: La alfabetización desarrolla habilidades de pensamiento crítico, lo cual ayuda a las personas a evaluar situaciones de manera más objetiva y a mantener la calma y la estabilidad emocional.
+      </p>
+    </div>
+    <div class="container info3">
+      <p>Alfabetización Financiera:</p>
+      <p>
+        Seguridad Financiera: Una mejor comprensión de las finanzas personales reduce el estrés financiero, lo que contribuye a una mayor ecuanimidad. La seguridad financiera permite a las personas enfrentar 
+        situaciones económicas adversas con más serenidad.
+      </p>
+      <p>
+        Toma de Decisiones Informadas: La alfabetización financiera facilita la toma de decisiones informadas y responsables, lo que puede reducir la ansiedad y el miedo al futuro, promoviendo así la ecuanimidad.
+      </p>
+    </div>
+    <div class="container info3">
+        <h4>Escuela Tecnica N°30 Fragata Presidente Sarmiento</h4>
+        <p>Esto fue realiado por alumnos de Septimo Año, promoción VAYDANIOS</p>
+    </div>
+    <div class="container slider">
+      <div class="sliderimg1">
+        <img src="./src/images/3.jpg" alt="slider" id="img-slider2">
+        <script src="slider.3.js"></script>
+      </div>
+    </div>
+    <div class="footer-container">
+      <p>&copy;2024 - Design by Renzo Gomez</p>
+    </div>
+  </section>
+  <!-- Boostrap 3.5 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

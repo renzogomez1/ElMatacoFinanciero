@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="parte2.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+  <title>El Mataco Financiero</title>
+</head>
+
+<body class="vh-100 overflow-hidden">
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <img src="./src/images/mataquito.png" alt="logoMata" class="logo"">
+
+      <a class="navbar-brand me-auto" id="titulo-navbar" href="#">El Mataco Financiero</a>
+      
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">El Mataco Financiero</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="./sistema.html">Sistema</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2 active" id="item-submenu">Creacion Proyecto</a>
+                <ul class="sub-item" id="submenu">
+                  <li class="item-submenu"><a href="./parte1.html" class="nav-item mx-lg-2">Emprendedorismo</a></li>
+                  <li class="item-submenu"><a href="./parte2.html" class="nav-item mx-lg-2">Estudio de Mercados</a></li>
+                  <li class="item-submenu"><a href="./parte3.html" class="nav-item mx-lg-2">Ingenieria de Proyecto</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link mx-lg-2">Test Emprendedor</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a href="#" class="ejemplo-button">Modelo</a>
+      <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+  <!-- Fondo -->
+  <section class="hero-section">
+    <div class="container info1">
+      <h2>Estudio de Mercado</h2>
+      <h4>Pasos para la formulación de un proyecto</h4>
+      <p>
+        El proceso de formulación del proyecto se desarrollara a través de una secuencia de pasos que es lógica y cronológica, es decir que la 
+        información de cada punto es fundamental para avanzar. “Saltear” un paso no es recomendable ya que produciría un déficit en el análisis 
+        de factibilidad del proyecto, que es el objetivo central de aplicarlo. Hablamos de formular un proyecto de inversión y lo consideramos 
+        como un sinónimo de un Plan de Negocios, este lo podemos definir como la guía del emprendedor o empresario. Es un documento donde se describe 
+        un negocio, se analiza la situación del mercado y se establecen las acciones que se realizarán en el futuro, junto a las correspondientes 
+        estrategias que serán implementadas, tanto para la promoción como para la fabricación o prestaciones esperadas, si se tratara de un producto 
+        o servicio respectivamente. Es un instrumento que permite comunicar una idea de negocio para venderla u obtener una respuesta positiva por 
+        parte de los inversores. También se trata de una herramienta de uso interno para el empresario, ya que le permite evaluar la viabilidad de 
+        sus ideas y concretar un seguimiento de su puesta en marcha; una plataforma de análisis y pruebas, en la que pueden quedar archivados muchos 
+        proyectos que no necesariamente sean pobres, sino que quizás necesiten más tiempo y dedicación para conseguir el éxito esperado o bien 
+        requiera aportes y/o miradas diferentes para lograrlo.
+      </p>
+    </div>
+    <div class="container info1">
+      <p>Se proponen los siguientes pasos para el desarrollo del proyecto de inversión:</p>
+      <h5>Estudio de mercado</h5>
+      <p>
+        1. Identificación de Oportunidades de Mercado <br>
+        2. Prefactibilidad del proyecto <br> 
+        3. Decisiones sobre comercialización (las 4 P) <br>
+        4. Identificación y cuantificación de la Demanda
+      </p>
+    </div>
+    <div class="container info1">
+      <h5>Ingeniería de proyecto</h5>
+      <p>
+        5. Descripción del proceso productivo o de la prestación del servicio <br>
+        6. Plan de actividades y cronograma <br>
+        7. Estimación y calendario de la Inversión <br>
+        8. Estudio de Costos <br>
+        9. Punto de Equilibrio
+      </p>
+    </div>
+    <div class="container info1">
+      <h5>Análisis económico financiero del proyecto de inversión</h5>
+      <p>
+        10. Flujo de fondos operativo y financiero <br>
+        11. Información para la toma de Decisiones
+      </p>
+    </div>
+    <div class="container info1">
+      <h5>Selección de la forma asociativa y organización del trabajo</h5>
+      <p>
+        12. Conformación societaria aspectos legales <br>
+        13. Conformación societaria aspectos tributarios <br>
+        14. Casos especiales de inscripciones fiscales <br>
+        15. Solicitud de crédito y garantías
+      </p>
+    </div>
+    <div class="container info1">
+      <h4>Presentación del Proyecto</h4>
+      <p>
+        Todo proyecto debe iniciar con una identificación del mismo. Aquí se deberá colocar información referente a: <br>
+          • Nombre del Proyecto <br>
+          • Localidad donde se llevará a cabo el emprendimiento <br>
+          • Actividad del Proyecto (indicar el rubro o rama de la actividad) <br>
+          • Monto del crédito solicitado <br>
+          • Forma asociativa (indicar si será una Sociedad de Hecho, S.R.L. o una S.A.) <br>
+          • Cantidad de socios <br>
+          • Descripción del proyecto (indicar de que se trata la idea o el pro yecto) <br>
+          • Identificación de los Integrantes del Proyecto (Nombre y Apellido, DNI, Edad, Formación (describir el nivel
+           y el tipo de formación), Dedicación en horas al proyecto (una vez que esté en marcha).
+      </p>
+    </div>
+    <div class="container info1">
+      <h4>1. Identificación de Oportunidades de Mercado</h4>
+      <p>
+        Para la formulación del proyecto se parte de la idea proyecto presentada por el grupo, esta idea proyecto se “tamiza” 
+        a través de dos herramientas: el análisis de la Industria de Porter y el análisis FODA; la aplicación de estas dos 
+        herramientas nos dará como resultado el diagnóstico de situación de donde se parte para el desarrollo del proyecto.
+      </p>
+      <div class="conteimg1">
+        <img src="./src/images/img17.jpg" alt="img17" id="images17">
+      </div>
+      <p>
+        Análisis de la Industria (Modelo de Porter): Identificar y ponderar la incidencia para el rubro de la idea proyecto, 
+        las 5 fuerzas que son:
+      </p>
+    </div>
+    <div class="container info1">
+      <h5>Proveedores</h5>
+      <p>
+        Hace referencia a la capacidad de negociación con que cuentan los proveedores, por ejemplo, mientras menor cantidad de 
+        proveedores existan, mayor será su capacidad de negociación, ya que al no haber tanta oferta de insumos, éstos pueden 
+        fácilmente aumentar sus precios.
+      </p>
+      <p>
+        Además de la cantidad de proveedores que existan, el poder de negociación de los proveedores también podría depender del 
+        volumen de compra, la cantidad de materias primas sustitutas que existan, el costo que implica cambiar de materias primas, etc.
+      </p>
+    </div>
+    <div class="container info1">
+      <h5>Clientes</h5>
+      <p>
+        Se refiere a la capacidad de negociación con que cuentan los consumidores o clientes, por ejemplo, mientras menor cantidad de 
+        compradores existan, mayor será su capacidad de negociación, ya que al no haber tanta demanda de productos, éstos pueden reclamar 
+        por precios más bajos.
+      </p>
+      <p>
+        Además de la cantidad de compradores que existan, el poder de negociación de los clientes también podría depender del volumen de 
+        compra, la escasez del producto, la especialización del producto, etc.
+      </p>
+    </div>
+    <div class="container info1">
+      <h5>Competencia</h5>
+      <p>
+        Son todas aquellas empresas que compiten directamente en una misma industria, ofreciendo el mismo tipo de producto.
+      </p>
+      <p>
+        El grado de rivalidad entre los competidores aumentará a medida que se eleve la cantidad de éstos, se vayan igualando en tamaño y 
+        capacidad, disminuya la demanda de productos, se reduzcan los precios, etc.
+      </p>
+    </div>
+    <div class="container info1">
+      <h5>Productos Sustitutos</h5>
+      <p>
+        Hace referencia a la entrada potencial de empresas que vendan productos sustitutos o alternativos a los de la industria. 
+        (Un ejemplo de productos sustitutos sería las bebidas gaseosas que podrían ser sustitutas de las aguas minerales, o el té podría ser 
+        un sustituto del café, o la carne de pollo ser sustituta de la carne de ganado vacuno, etc. ). Y con respecto a los servicios estos 
+        pueden tener sustitutos en bienes estándar o autorealizados.
+      </p>
+      <p>
+        La entrada de productos sustitutos no solo podría impactar disminuyendo nuestras cantidades vendidas, si no también, fijando un límite 
+        al precio máximo que se podría colocar a nuestros productos.
+      </p>
+    </div>
+    <div class="container info1">
+      <h5>Barreras de Ingreso y Egreso</h5>
+      <p>
+        Hace referencia a la entrada potencial de empresas que vendan el mismo tipo de producto. Al intentar entrar una nueva empresa a una 
+        industria, ésta podría tener barreras de entradas tales como la falta de experiencia, lealtad del cliente, cuantioso capital requerido, 
+        falta de canales de distribución, falta de acceso a insumos, saturación del mercado, etc. Pero también podrían fácilmente ingresar si es 
+        que cuenta con productos de calidad superior a los existentes, o precios más bajos.
+      </p>
+      <p>
+        En cuanto a las barreras de Egreso, se refiere a la dificultad que podría tener la empresa para salir del negocio o dejar la actividad, 
+        por ejemplo, puede que sus maquinarias o equipos sean difícil de vender o no tengan reventa, etc.
+      </p>
+      <p>
+        La consigna implica determinar el nivel de influencia que estas fuerzas de mercado ejercen en nuestro proyecto. En este sentido debo contestar 
+        preguntas del tipo
+      </p>
+      <p>
+        ¿Quiénes son?, ¿Cómo son sus estructuras?, ¿Dónde están?, ¿Están concentrados? ¿Son únicos?, ¿Hace cuanto están en el mercado? etc.
+      </p>
+    </div>
+    <div class="container info1">
+      <div class="contedor1">
+        <h4>Análisis de las 5 fuerzas de Mercado</h4>
+      </div>
+      <div class="contenedor2">
+        <img src="./src/images/cuadro2.png" alt="cuadr2" id="cuadro22">
+      </div>
+    </div>
+    <div class="container info1">
+      <h4>Análisis o Matriz FODA</h4>
+      <p>
+        Desarrollar la realidad de la idea proyecto en cuanto a oportunidades y amenazas (reflejo del ambiente externo) y a fortalezas y debilidades 
+        (reflejo de la situación interna de la futura empresa).
+      </p>
+      <p>
+        Fortaleza o punto fuerte es algo que la empresa puede hacer bien o puede ser un recurso valioso o capacidad competitiva de la organización o un 
+        logro que le genera a la compañía una situación favorable en el mercado. Puede ser:
+      </p>
+      <p>• Una habilidad o una destreza importante: pueden ser conocimientos prácticos de fabricación o tecnológicos; destreza para proporcionar un buen 
+        servicio al cliente; habilidades para desarrollar productos o servicios innovadores; buenas capacidades de comercialización; fabricación libre 
+        defecto, talentos para publicidad y promociones; etc. <br>
+        • Activos físicos valiosos: plantas; equipos modernos; ubicación atractiva; depósitos de recursos naturales; efectivo disponible, sistemas de 
+        información sobresalientes.
+      </p>
+    </div>
+    <div class="container info1">
+      <p>
+        • Activos organizacionales valiosos: sistemas comprobados de control de calidad, patentes claves, derechos de explotación; acceso a información 
+        clave del mercado, de los proveedores; etc. <br>
+        • Activos humanos valiosos: fuerza laboral capaz y experimentada; empleados talentosos en áreas claves; trabajadores dinámicos y motivados, 
+        conocimiento actualizado y capital intelectual, lealtad de los empleados; ambiente de trabajo solidario etc. <br>
+        • Activos intangibles: imagen de la marca; prestigio de la empresa, cultura organizacional; etc. <br>
+        • Capacidades competitivas: tiempos breves para desarrollar y llevar al mercado nuevos productos; amplia red de distribución; asociaciones
+        poderosas con proveedores claves, grupos de investigación y desarrollo que permitan tener siempre un producto nuevo en el mercado; etc <br>
+        • Alianzas estratégicas: sociedades colaborativas fructíferas con los proveedores y los aliados de ventas que mejoren la propia competitividad 
+        de la empresa.
+      </p>
+    </div>
+    <div class="container info1">
+      <p>
+        Debilidad o Punto Débil son deficiencias en la dotación de recursos de una empresa, es algo que le hace falta a la compañía, una carencia, algo 
+        que hace mal o una condición que la coloca en situación desfavorable. Un punto débil puede hacer que una compañía sea, competitivamente vulnerable 
+        y el análisis se refiere a identificar si la debilidad puede ser superada por medio de los recursos y las fortalezas que posee la empresa. Las 
+        debilidades internas se pueden relacionar con:
+      </p>
+      <p>
+        • las deficiencias en las habilidades que son, competitivamente importantes, o en capital intelectual; <br>
+        • una carencia de activos físicos, humanos, organizacionales o intangibles; <br>
+        • capacidades competitivas ausentes o débiles en las áreas claves.
+      </p>
+    </div>
+    <div class="container info1">
+      <p>
+        Oportunidad son situaciones positivas que se generan en el contexto y que están disponibles para todas las empresas, que se convertirán en 
+        oportunidades de mercado para la empresa cuando ésta las identifique y las aproveche en función de sus fortalezas. Algunas de las preguntas que 
+        se pueden realizar y que contribuyen en el desarrollo son:
+      </p>
+      <p>
+        • ¿Qué circunstancias mejoran la situación de la empresa? <br>
+        • ¿Qué tendencias del mercado pueden favorecernos? <br>
+        • ¿Qué cambios de tecnología se están presentando en el mercado? <br>
+        • ¿Qué cambios en la normatividad legal y/o política se están presentando? <br>
+        • ¿Qué cambios en los patrones sociales y de estilos de vida se están presentando?
+      </p>
+    </div>
+    <div class="container info1">
+      <p>
+        Amenaza son situaciones o hechos externos a la empresa que pueden llegar a ser negativos para la misma. Ponen en riesgo su bienestar, su rentabilidad 
+        y su posición de mercado: la aparición de tecnologías más económicas, la introducción de productos nuevos o mejores de la competencia, incremento a 
+        la tasa de interés, cambios demográficos desfavorables, etc. El objetivo es identificar las amenazas y emprender acciones estratégicas para disminuir 
+        o neutralizar su impacto. Algunas de las preguntas que se pueden realizar y que contribuyen en el desarrollo son:
+      </p>
+      <p>
+        • ¿Qué obstáculos se enfrentan a la empresa? <br>
+        • ¿Qué están haciendo los competidores? <br>
+        • ¿Se tienen problemas de recursos de capital? <br>
+        • ¿Puede alguna de las amenazas impedir totalmente la actividad de la empresa?
+      </p>
+    </div>
+    <div class="container info1">
+      <div class="contenedor3">
+        <h4>Matriz FODA</h4>
+      </div>
+      <div class="contenedor4">
+        <img src="./src/images/cuadro3.png" alt="fodaMatriz" id="cuadro3">
+      </div>
+    </div>
+    <div class="container info1">
+      <h4>2. Prefactibilidad del proyecto</h4>
+      <p>
+        Se plantea aquí como cuestión condicionante relevar aspectos que puedan 
+        obstaculizar la implementación del proyecto en cuanto a los aspectos: legal, ambiental, técnico y social:
+      </p>
+    </div>
+    <div class="container info1">
+      <p>
+        En lo legal y ambiental se plantea relevar la legislación específica en cuanto a habilitaciones o prohibiciones 
+        de orden nacional, provincial y municipal ya sea para aspectos productivos o comerciales. Este punto hay que 
+        tenerlo muy presente a la hora de analizar el lugar, local o establecimiento donde se pretende llevar a cabo el 
+        emprendimiento dado que existen legislaciones u ordenanzas municipales que especifican los requisitos que deben 
+        cumplir los diferentes rubros de los emprendimientos y donde pueden emplazarse geográficamente estos rubros dentro 
+        del ejido urbano. De tener que realizar inversiones en refacciones, remodelaciones o instalaciones para cumplir 
+        con la legislación y poder habilitar la empresa, estas inversiones deben estar plasmadas en el proyecto.
+      </p>
+    </div>
+    <div class="container info1">
+      <p>
+        En cuanto a la técnica se refiere a contar con las habilidades de diseño y producción de los bienes y servicios en 
+        cuestión, como también en relación al soporte físico para la producción y a la localización geográfica del proyecto.
+         Ejemplo para una panadería: <br>
+        Habilidades: dos de los socios son maestros panaderos y pasteleros y han trabajado 4 años en panaderías de la ciudad, 
+        ellos serán los encargados de la producción de los productos. El tercer socio tiene experiencia en atención al público 
+        por haber trabajado en comercios de la zona centro de la ciudad y será el encargado de las ventas y comercialización. <br>
+        Soporte físico: el equipamiento básico indispensable que se requiere es un horno rotativo de 12 bandejas (a adquirir con 
+        el préstamo), una amasadora (a adquirir con aportes propios de los socios), una sobadora, una trinchadora, un mesón de trabajo, 
+        y utensilios varios (equipos existentes a aportar por los integrantes del proyecto). <br>
+        Localización geográfica: si se tiene con certeza consignar, la panadería se localizará en la calle ………. N° xxx, entre las calles 
+        …………y …………, se sugiere adjuntar mapa (Googlemaps). Cuando no se tiene un lugar cierto se especifica la zona de mejor conveniencia 
+        y las características que requerirá el espacio físico necesario.
+      </p>
+    </div>
+    <div class="container info1">
+      <p>
+        Y lo social, plantea el grado de aceptación del entorno a la empresa, ya sea por las costumbres, ya sea por la incidencia en el 
+        funcionamiento de las relaciones humanas que prevalezcan en la zona de influencia. <br>
+        La identificación de estos parámetros legales, ambientales y sociales tienen incidencia en la elección de las formas de producción y 
+        comercialización, por lo que repercutirán en los costos a los que se enfrenta la empresa.
+      </p>
+    </div>
+    <div class="container info1">
+      <h4>3. Decisiones sobre comercialización (las 4 P)</h4>
+      <p>
+        Parte del estudio de mercado consiste en ir definiendo las cuestiones básicas de comercialización de los productos o servicios que 
+        se definan como producción de la nueva empresa. Técnicamente las separamos en 4, producto, precio, plaza y promoción, pero están 
+        íntimamente ligadas y su interrelación es altamente compleja.
+      </p>
+      <p>
+        presa y la ajusta bajo la luz de la información de la competencia, los ciclos estacionales de consumo de los productos o servicios 
+        y la frecuencia de compra de los clientes.
+      </p>
+      <p>
+        Definición de la capacidad de producción mensual y anual: Se deberá detallar para cada mes: <br>
+        • El tipo de producto, <br>
+        • La cantidad de productos a producir, <br>
+        • La incidencia de la estacionalidad.
+      </p>
+    </div>
+    <div class="container info1" id="cont29-30">
+      <div class="contenedor29">
+        <h4>PRODUCTO</h4>
+        <p>
+          Tener claro el tipo de producto que van a ofrecer, pero fundamentalmente definir acciones de valor 
+          agregado adicional al producto en sí, para diferenciarse de sus competidores. (Obliga a estudiar la 
+          competencia)
+        </p>
+        <p>
+          Las decisiones que se deben tomar con respecto al producto tienen que ver con: <br>
+          • Atributos del producto (calidad, características, estilo y diseño) <br>
+          • Marca (nombre, término, símbolo, cuyo propósito es identificar el producto de la empresa y diferenciarlo de los de la competencia) <br>
+          • Envase (diseño y producción de un contenedor o envoltorio para contener, proteger, promocionar y diferenciar el producto. <br>
+          • Etiquetado (su función es identificar, describir, promover y dar información sobre el producto) <br>
+          • Servicios de Apoyo (servicios al cliente post-venta)
+        </p>
+      </div>
+      <div class="contenedor30">
+        <img src="./src/images/img18.jpg" alt="img18" id="images18">
+      </div>
+    </div>
+    <div class="container info1">
+      <h4>PRECIO</h4>
+      <p>
+        Saber qué estrategia de precio van a tomar (rentabilidad-volumen-prestigio), además deben comprender que el precio no solo se conforma de un 
+        costo más un margen, sino que también depende de “cuánto está dispuesto a pagar el consumidor” y los precios de la competencia. <br>
+        Estrategia de Precios:
+      </p>
+      <p>
+        • Precios de Descremación: las empresas que normalmente descubren algún avance tecnológico suelen tener los precios muy altos en un principio 
+        para maximizar el mercado por descremado y luego, paulatinamente, ir reduciendo los precios (Ejemplo: Los plasmas LCD salieron al mercado a 
+        un precios promedio de $ 12000 ahora están a $5000, dado que surgió una nueva tecnología los LED).
+      </p>
+      <p>
+        • Precios de Penetración: Es la inversa de lo anterior, la empresa sale al mercado con un precio muy bajo para lograr captar clientes rápidamente 
+        y obtener una mayor participación en el mercado.
+      </p>
+      <p>
+        • Precios Diferenciales: Se pueden realizar descuentos por compras en cantidad o por pago en efectivo (o pronto pago) como también se puede 
+        cobrar con intereses por vender a crédito o en cuenta corriente.
+      </p>
+        • Precios Psicológicos: Pr. Pares (o Redondeados): dan la sensación de un producto de calidad o de prestigio (Ej: los automóviles 0Km no se venden en 
+        $99.011,75 sino $99.010 o $99.020). Pr. Impares: Se asocian con un precio menor (Ej: $399 mentalmente se asocia más a $300 que a $400).
+    </div>
+    <div class="container info1">
+      <h4>PLAZA</h4>
+      <p>
+        El análisis de los clientes, su ubicación geográfica, su segmentación y la determinación del público objetivo. Como así también, determinar las 
+        formas o canales de distribución de los productos a los clientes.
+      </p>
+    </div>
+    <div class="container info1" id="cont31-32">
+      <div class="contenedor31">
+        <h4>PROMOCIÓN</h4>
+        <p>
+          Cómo, dónde y cuánto cuesta la forma de promocionarse, de “hacerse conocer”. El objetivo en esta parte es elaborar un PLAN de COMUNICACIÓN. 
+          El cual puede estar compuesto por:
+        </p>
+        <p>
+          • Publicidad: (Cualquier forma pagada de representación y promoción no personales de ideas, bienes o servicios, por un patrocinador identificado) <br>
+          • Promoción de Ventas: (Incentivos a corto plazo que fomentan la compra o venta de un producto o servicio) <br>
+          • Relaciones Públicas (RR.PP.): (Generar buenas relaciones con diversos públicos mediante publicidad favorable, creación de buena imagen 
+          corporativa, manejo o bloqueo de rumores, relatos o sucesos desfavorables) <br>
+          • Ventas Personales: (Presentación personal de la fuerza de ventas de la empresa, con el propósito de vender y de establecer relaciones con el 
+          cliente) <br>
+          • Marketing Directo: (Comunicación directa con consumidores individuales, seleccionados, para obtener una respuesta inmediata. 
+          Ej: Uso de Telefonía, correo, fax, e-mail, redes sociales, Internet, etc.) 
+        </p>
+      </div>
+      <div class="contenedor32">
+        <img src="./src/images/img19.jpg" alt="img19" id="images19">
+      </div>
+    </div>
+    <div class="container info1" id="cont5-6">
+      <div class="contenedor5">
+       <h4>La construcción de la marca</h4>
+       <p>
+         Un producto es algo que se produce en la fábrica; una marca es algo que compra el cliente. <br>
+         Un producto puede ser copiado por un competidor, la marca NO, es única. <br>
+         Un producto puede quedar rápidamente obsoleto, la marca de éxito pervive en el tiempo... 
+       </p>
+        <p>
+          El nombre de la marca le da identidad al producto físico, es el inicio de una personalidad.
+          La marca es un nombre que simboliza y representa algún concepto al cliente, y le brinda a la empresa la posibilidad de posicionarse en la 
+          mente de las personas respecto a su competencia.
+        </p>
+      </div>
+      <div class="contenedor6">
+        <img src="./src/images/img6.png" alt="img6" id="images6">
+      </div>
+    </div>
+    <div class="container info1" id="cont7-8-9-10">
+      <div class="contenedor7">
+        <h4>¿Cómo tiene que ser un nombre de marca?</h4>
+        <p>
+          Hay que tener especial cuidado en la elección del nombre de la marca, porque una vez establecido es muy complicado y costoso cambiarlo.
+          El éxito del nombre se liga generalmente con el momento de lanzamiento del producto: El primer nombre “pega dos veces”.
+        </p>
+      </div>
+      <div class="contenedor8">
+        <img src="./src/images/img7.png" alt="img7">
+      </div>
+      <div class="contenedor9">
+        <h5>Lo ideal es que sean:</h5>
+        <p>
+          Breve y simple: las palabras de una o dos sílabas son más fáciles de pronunciar, aprender y recordar. <br>
+          Por ejemplo: Bic, Skip, Raid. <br>
+          Por otra parte muchas marcas se conforman en siglas para ser breves. Por ejemplo: YPF.
+        </p>
+      </div>
+      <div class="contenedor10">
+        <img src="./src/images/img8.png" alt="img8">
+      </div>
+    </div>
+    <div class="container info1" id="cont11-12-13-14">
+      <div class="contenedor11">
+        <p>Melodiosa, agradable: La audición del nombre de marca debe resultar agradable para el oído, debe sonar bien, fácil de pronunciar, pegadiza. 
+          Por ejemplo: Cheeky, Mimo.
+        </p>
+      </div>
+      <div class="contenedor12">
+        <img src="./src/images/img9.png" alt="img9">
+      </div>
+      <div class="contenedor13">
+        <p>
+          De fácil lectura y pronunciación: Hay que tener especial cuidado con: <br>
+          • Las marcas importadas. <br>
+          • Los nombres en otro idioma. <br>
+          • Las siglas. <br>
+          Por ejemplo: ArCor Significa “Arrollito - Córdoba”...diferente sería AC
+        </p>
+      </div>
+      <div class="contenedor14">
+        <img src="./src/images/img10.png" alt="img10">
+      </div>
+    </div>
+    <div class="container info1" id="cont15-16-17-18">
+      <div class="contenedor16">
+        <p>
+          Recordable: el nombre tiene que incorporarse fácilmente a la memoria de las personas. <br>
+          Un nombre de marca es fácil de recordar cuándo: <br>
+          • Tiene un significado específico. <br>
+          • Es Interesante, o tiene “algo” que lo haga especial como la rima. Por ejemplo <br>
+          el diario deportivo Olé, marca generada a partir de los cánticos de las hinchadas.
+        </p>
+      </div>
+      <div class="conenedor17">
+        <p>
+          Es Sorprendente: los nombres que generan curiosidad o extrañeza en las personas. Por ejemplo Apple en informática. <br>
+          Es sugestiva: transmitir alguna característica del producto para un mejor reconocimiento. <br>
+          Por ejemplo: la mostaza marca SAVORA, la mayonesa RI-K, la mayonesa con aceite de oliva MAYOLIVA <br>
+          Originalidad - diferente: el nombre de la marca debe ser único. Se deberán evitar imitaciones de otros nombres de marcas.
+        </p>
+      </div>
+      <div class="contenedor18">
+        <img src="./src/images/img11.png" alt="img11">
+      </div>
+    </div>
+    <div class="container info1">
+      <h4>¿Cómo elegir un nombre de marca?</h4>
+      <p>
+        1. Nombres Propios <br>
+        Generalmente corresponde al nombre o apellido de una familia. Hay varias formas de utilización de nombres propios: <br>
+        • El nombre de una persona real inicialmente desconocida, que luego se hace conocer por el éxito de sus productos. Como ser: Mc Donalds, Walt Disney, Ribeiro. <br>
+        • El nombre de una persona que no existe. <br>
+        • También podemos utilizar el nombre de personajes religiosos, históricos, de libros, de películas, de antepasados, etc.
+      </p>
+      <p>
+        2. Nombres Arbitrarios <br>
+        Son marcas que NO se relacionan directamente con la actividad empresarial, ni con los productos que vende. Como inicialmente no significan
+        nada, deben ser completados por el slogan y una buena campaña de comunicación. <br>
+        Por ejemplo: Apple es el nombre de la discográfica de Los Beatles y Macintosh es una variedad de manzana californiana. También se podría utilizar
+        frases curiosas y sin relación con la actividad.
+      </p>
+      <p>
+        3. Siglas o sílabas <br>
+        Son nombres que se conforman en siglas o iniciales y hacen referencia a la actividad que desarrollan, a lugares geográficos, o simplemente son
+        nombres largos.Por ejemplo SANCOR (Santa Fe - Córdoba). Lo importante es que la palabra que se forme sea legible.
+      </p>
+      <p>
+        4. Nombre de Fantasía <br>
+        Surgen transformando alguna cualidad o propiedad del producto. También pueden resultar a partir de figuras o imágenes relacionadas (Cresta roja, Granja del Sol, etc.)
+      </p>
+      <p>
+        5. Nombre Genéricos <br>
+        Son marcas que hacen referencia a la actividad general de su sector. Mencionan la función que cumplen o lo que fabrican. Hacen énfasis en la fuerza conjunta de todo un mercado.
+      </p>
+    </div>
+    <div class="container info1">
+      <p>
+        6. Nombres Referenciales <br>
+        Hacen referencia al producto o servicio que brindan. Por ej.: Ambito Financiero.
+      </p>
+      <p>
+        7. Nombres referenciales “Geográficos” <br>
+        Además de mencionar el tipo de producto o servicio que brindan, hacen referencia a una zona geográfica (generalmente de donde provienen). 
+        Por ejemplo Pastas La Salteña;. Quilmes (Ciudad de la provincia de Buenos Aires).
+      </p>
+      <p>
+        8. Nombres NO referenciales <br>
+        Son nombre que no tienen ningún significado o relación. Por ej.: Kodak, Gallo.
+      </p>
+      <p>
+        9. Nombres Transgresores <br>
+        Buscan generar un fuerte impacto en el mercado. Tienen vocación “provocadora”. Por ejemplo: Auténticos Decadentes, Intoxicados, Pibes Chorros, etc. Funcionan muy bien en un segmento específico, en este caso adolescentes o jóvenes.
+      </p>
+      <p>
+        10. Palabras del Diccionario en otros Idiomas Taragui <br> 
+        Hierba autóctona en Guaraní
+      </p>
+      <p>
+        11. Palabras inventadas o deformadas <br>
+        Mayonesa Ri-K, Poett, Topper.
+      </p>
+      <p>
+        12. Fechas, Nombres y/o Apellidos o acontecimientos Históricos <br>
+        Laprida, Rivadavia, Cerámicos San Lorenzo
+      </p>
+    </div>
+    <div class="container info1">
+      <h4>Slogan</h4>
+      <p>
+        Un Slogan es una frase o conjunto de palabras de gran importancia que contribuye a completar el mensaje trasmitido por la marca. Su uso es ideal 
+        cuando una marca es nueva en el mercado.
+      </p>
+      <p>
+        Al igual que el nombre de marca, un slogan es más efectivo cuando son: <br>
+        • Cortos y simples <br>
+        • Descriptivos o informativos: menciona un beneficio o una característica clave. <br>
+        • Es original, no usado por ninguna otra empresa. <br>
+        • Recordable, memorable, pegadizo y hasta divertidos.
+      </p>
+      <p>
+        * El slogan puede cambiarse con mayor libertad que el nombre de marca. <br>
+        Por esto muchas marcas han tenido diversos slogans a través del tiempo. Este es el caso de Coca Cola:
+      </p>
+      <div class="conteimg2">
+        <img src="./src/images/img12.png" alt="img12" id="images7">
+      </div>
+      <p>
+        * Algunos slogans intentan reforzar el nombre de marca y lo asocian con alguna cualidad del producto. Por ejemplo: “si es Bayer, es bueno”; 
+        “Duracell es duración”, “El blanco ALA”.
+      </p>
+    </div>
+    <div class="container info1">
+      <h4>4. Identificación y cuantificación de la Demanda</h4>
+      <p>
+        Conocer la demanda es uno de los requisitos fundamentales de la formulación de un proyecto, la demanda es la fuente de vida de las empresas, 
+        ya que define el diseño de los productos o servicios y define la cuantía de los ingresos económicos.
+      </p>
+      <h5>Identificación de la demanda</h5>
+      <p>
+        Desarrollar los conceptos de segmentación y diferenciación. Segmentación socio demográfica, por estilos de vida y comportamiento de compra.
+        Orientación para la búsqueda de información disponible.
+      </p>
+      <p>
+        1. Definición de los objetivos del estudio de la demanda. <br>
+        2. Definición de la población de estudio. <br>
+        3. Selección del tipo de segmentación y variables a considerar. <br>
+        4. Selección de técnicas de recolección de datos. <br>
+        a. Técnicas cuantitativas (encuestas). <br>
+        b. Técnicas cualitativas (focus grupo, entrevistas a personas de relevancia). <br>
+        5. De acuerdo a las definiciones de la segmentación, definir: estrategia de fijación de precio, sistema de distribución y acciones de promoción.
+      </p>
+    </div>
+    <div class="container info1">
+      <h4>¿Cómo realizar la Encuesta?</h4>
+      <p>
+        Cuando se decide utilizar la encuesta como medio para recolectar información se llevarán a cabo ordenadamente las siguientes dos fases:
+      </p>
+      <h5>1) Determinación de los objetivos</h5>
+      <p>
+        Detallar ¿Qué queremos saber? ¿Cuántas cosas necesitamos hacer? ¿Por qué estamos realizando esta encuesta?
+      </p>
+      <p>
+        Hay que hacer preguntas concretas que te ayuden a dar respuesta al objetivo de la investigación.
+      </p>
+      <p>
+        ¿Qué quiero saber sobre las personas que voy a encuestar?
+      </p>
+      <p>
+        Se recomienda hacer una lista de 5 o 10 objetivos, desde lo más básico hasta lo más complejo para que se pueda convertir esos objetivos en preguntas. Los objetivos pueden ser algo así como: <br>
+        • “Identificar la edad, estado civil y el sexo de las personas encuestadas” o, <br>
+        • “Conocer los negocios donde compran las personas encuestadas”, o incluso algo más preciso como: <br>
+        • “Investigar el precio que están dispuestos a pagar por zapatos las mujeres casadas que viven en un radio de 10 cuadras a la redonda de donde quiero poner mi local comercial”
+      </p>
+    </div>
+    <div class="container info1">
+      <p>
+        Tener claro los objetivos de información ayudará a evitar preguntas innecesarias o irrelevantes, lo que podría demorar o molestar a nuestros encuestados y les haga abandonar la encuesta antes de completarla.
+      </p>
+      <p>
+        Realiza un cuestionario a la medida de tus necesidades: luego de identificar los objetivos, lo siguiente es convertir cada uno de esos objetivos en una o dos preguntas. 
+        Se recomienda no tener más de 10 preguntas en el cuestionario, o tal vez un máximo de dos páginas, esto para mantener sencillez y no dilatar demasiado la encuesta.
+        Se suele recomendar que se les de opciones de respuestas. 
+      </p>
+    </div>
+    <div class="container info1">
+      <h5>2) Determinación del tipo de encuesta.</h5>
+      <p>
+        Se deberá identificar cuál es el tipo de encuesta más idóneo para llevar a cabo la investigación. <br>
+        La encuesta podrá ser personal, por correo electrónico, internet, google drive. <br>
+        La elección de un tipo de encuesta está determinada por el tema de la investigación, la población a estudiar, el tiempo y presupuesto disponible.
+      </p>
+      <h5>Cuestiones a tener en cuenta cuando hacemos una encuesta...</h5>
+      <p>
+        A la hora de comenzar a redactar el cuestionario es conveniente tener en cuenta lo siguiente:
+      </p>
+      <p>
+        • Al momento de tomar la encuesta, se deberá comenzar explicando de que se trata la encuesta y cuál es el fin de la misma. <br>
+        • Las preguntas necesitan ser importantes, así como que deben tener una conexión con nuestros objetivos. <br>
+        • Muchas encuestas son anónimas. <br>
+        • Debemos hacer al inicio las preguntas más sencillas para gradualmente irlas complicando.
+      </p>
+    </div>
+    <div class="container info1">
+      <div class="contenedor15">
+      <p>
+        • El orden de las preguntas debe realizarse de tal forma que no se vean afectadas por otras: las preguntas deben agruparse por temas. <br>
+        • Las preguntas deben formularse en un lenguaje claro y entendible. <br>
+        • Las preguntas deben ser lo más cortas posibles. <br>
+        • Hagamos Respuestas Mutuamente Excluyentes: Un error común es usar categorías que no se excluyan entre sí. <br> 
+        Por ejemplo:
+      </p>
+    </div>
+      <div class="contenedor19">
+        <img src="./src/images/imgcuadro1.png" alt="cuadr4" id="cuadro4">
+      </div>
+    </div>
+    <div class="container info1">
+      <div class="contenedor20">
+        <p>
+          En este caso, la persona puede responder solo una categoría, y si tiene 30 años, podría escoger las dos de las diferentes 
+          alternativas propuestas. Debajo está un ejemplo de cómo excluir categorías de edad:
+        </p>    
+      </div>
+      <div class="contenedor21">
+        <img src="./src/images/img13.png" alt="img13">
+      </div>
+      <div class="contenedor22">
+        <p>
+          • Asegurémonos de que se incluye un espacio para sugerencias o comentarios <br>
+          • Cubramos Todas Las Alternativas Posibles: Es importante dar las alternativas que cubran todas las posibles respuestas a la pregunta dada. Por ejemplo:
+        </p>
+      </div>
+      <div class="contenedor23">
+        <img src="./src/images/img14.png" alt="img14">
+      </div>
+    </div>
+    <div class="container info1">
+      <div class="contenedor24">
+        <p>
+          Está pregunta está olvidando varias alternativas como son:
+        </p>
+      </div>
+      <div class="contenedor25">
+        <img src="./src/images/img15.png" alt="img15">
+      </div>
+      <div class="contenedor26">
+        <p>
+          Si los encuestados no pueden encontrar ninguna alternativa válida entre las propuestas, no podrán responder correctamente.
+        </p>
+        <p>
+          ¡Y no olvidemos agradecer la cooperación del entrevistado para con nuestro estudio!
+        </p>
+        <p>
+          Conviene probar la encuesta antes de su lanzamiento definitivo. Esto es para comprobar si se entienden bien las preguntas, si hay problemas en la redacción.
+        </p>
+        <p>
+          Los resultados obtenidos de las encuestas nos deberán permitir obtener las conclusiones necesarias para estimar la demanda futura de nuestro producto o servicio.
+        </p>
+      </div>
+    </div>
+    <div class="container info1">
+      <div class="contenedor26">
+        <h4>Cuantificación de la Demanda</h4>
+        <p>
+          Cuantificar la demanda es el primer paso para analizar la viabilidad económica del proyecto, es el paso de “los números” del proyecto, el adecuado cierre de
+          un estudio de mercado es poder “cuantificar las unidades a vender”, es decir la proyección de ventas. Donde se define la variable Q como las cantidades de
+          productos o servicios prestados y P el precio al que se estima poder vender:
+        </p>
+      </div>
+      <div class="contenedor27">
+        <img src="./src/images/img16.png" alt="img16">
+      </div>
+      <div class="conteneedor28">
+        <p>
+          Las variables a definir entonces son cantidades y precios, (las estrategias de fijación de precios se verán más adelante), se definirán las cantidades que la
+          empresa va a vender, para ello se podrá hacer por la oferta o por la demanda, por la demanda se conoce como poder estimar la cuota de mercado a la que 
+          puede acceder la empresa, lograr una cuota de mercado es comúnmente un objetivo a alcanzar por las empresas.
+        </p>
+        <p>
+          Metodológicamente se plantea tomar la información disponible del mercado total y aplicar los criterios de segmentación definidos anteriormente, esto permitirá
+          llegar al número de la demanda potencial de nuestro producto o servicios en un determinado lugar. La desventaja de este método es no tener datos
+          sobre el mercado amplio y no poder entonces aplicar la segmentación.
+        </p>
+      </div>
+    </div>
+    <div class="container info1">
+      <p>
+        Paralelamente se debe desarrollar la proyección de ventas por la oferta, este enfoque parte de la estimación de la capacidad máxima operativa de la empresa
+        y la ajusta bajo la luz de la información de la competencia, los ciclos estacionales de consumo de los productos o servicios y la frecuencia de compra
+        de los clientes.
+      </p>
+      <p>
+        Definición de la capacidad de producción mensual y anual: Se deberá detallar para cada mes: <br>
+        • El tipo de producto, <br>
+        • La cantidad de productos a producir, <br>
+        • La incidencia de la estacionalidad.
+      </p>
+    </div>
+    <div class="container info1">
+      <h5>
+        Errores frecuentes:
+      </h5>
+      <p>
+        Normalmente se calcula la demanda potencial total del mercado para un producto o servicio y no se cuantifica la demanda potencial PARA LA EMPRESA, que será un
+        porcentaje de dicha demanda total (lo que denominamos cuota de mercado). Dicha cuota de mercado deberá tener en cuenta, a su vez, la capacidad máxima operativa
+        de la empresa. Dicha capacidad máxima operativa, será el techo de la proyección de ventas de la empresa.
+      </p>
+    </div>
+    <div class="container info1">
+      <h4>Definición de la capacidad máxima operativa</h4>
+      <h5>Capacidad máxima de producción Mensual:</h5>
+      <div class="conteimg3">
+        <img src="./src/images/imgcuadro2.png" alt="cuadr5" id="cuadro5">
+      </div>
+    </div>
+    <div class="container info1">
+      <p>
+        Este cuadro debe reflejar la capacidad máxima de producción del proyecto en cuestión, hay que tener en cuenta las unidades de medida 
+        consignadas, que se puedan contrastar con las unidades de medida utilizadas en el costeo de producción, así como también agregar las 
+        hs de trabajo necesarias para estas estimaciones, la información de las hs se contrasta con las horas de dedicación al proyecto.
+      </p>
+    </div>
+    <div class="container info1">
+      <h5>Produccion Anual</h5>
+      <div class="conteimg4">
+        <img src="./src/images/imgcuadro3.png" alt="cuadr6" id="cuadro6">
+      </div>
+      <p>
+        Este cuadro se refiere a consignar la proyección de producción en unidades durante el primer año teniendo en cuenta la estacionalidad 
+        de la producción y/o de la demanda, tener precaución de no exceder ningún mes la capacidad máxima de producción mensual.
+      </p>
+    </div>
+    <div class="container info1" id="ultimocuadro">
+      <h5>Ventas Anuales:</h5>
+      <div class="conteimg5">
+        <img src="./src/images/imgcuadro4.png" alt="cuadro7" id="cuadro7">
+      </div>
+      <p>Este cuadro se refiere a consignar la proyección de las ventas en pesos durante el primer año, este cuadro deriva del anterior 
+        combinándolo con los precios definidos. Si hubiera desfasaje entre los meses de producción y a los meses de venta, es recomendable 
+        explicarlo asi se pueden interpretar mejor los cuadros. Este cuadro de ventas va a ser la base cuantitativa para los ingresos en 
+        el flujo de fondos operativos del primer año.</p>
+    </div>
+    <div class="footer-container">
+      <p>&copy;2024 - Design by Renzo Gomez</p>
+    </div>
+  </section>
+  <!-- Boostrap 3.5 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+.logo {
+    width: 100px;
+}
+
+.overflow-hidden {
+    font-family: 'Josefin sans';
+    display: flex;
+    
+}
+
+.navbar {
+    background-color: #fff;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+
+}
+
+.navbar-brand {
+    font-weight: 500;
+    color: aquamarine;
+    font-size: 24px;
+    transform: 0.3s color;
+
+}
+
+.ejemplo-button {
+    background-color: aquamarine;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.ejemplo-button:hover {
+    background-color: rgb(35, 134, 101);
+
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #cbc7c7;
+}
+
+
+.nav-item ul {
+    background: white;
+    list-style: none;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.nav-item li {
+    width: 100%;
+}
+
+.nav-item .sub-item a {
+    color: black;
+    text-decoration: none;
+    background: white;
+    font-size: 14px;
+    display: flex;
+    padding: 5px 20px;
+    transition: all 0.25s ease;
+}
+
+#submenu {
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+    z-index: 1;
+}
+
+
+li:hover ul#submenu {
+    opacity: 1;
+    margin-top: 2%;
+    visibility: visible;
+}
+
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute; /* */
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: aquamarine;
+        visibility: hidden;
+        transition: 0.7s, ease-in-out;
+    }
+
+    .nav-link:hover::before, .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+.hero-section {
+    background: url(./src/images/fondo.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+    position: relative;
+}
+
+.hero-section::before {
+    background-color: rgba(0, 0, 0, 0, 6);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/*logo loading*/
+#container{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.matagrande {
+    width: 400px;
+  }
+
+#container .loading {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#svg-spinner{
+    -webkit-transition-property: -webkit-transform;
+    transition-duration: 1.2s;
+    -webkit-animation-name: rotate;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    
+    -moz-transition-property: -moz-transform;
+    -moz-animation-name: rotate; 
+    -moz-animation-duration: 1.2s; 
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    
+    transition-property: transform;
+    animation-name: rotate; 
+    animation-duration: 1.2s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+  
+@-webkit-keyframes rotate {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+  
+@-moz-keyframes rotate {
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(360deg);}
+}
+  
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+/*pie de pagina */
+
+.footer-container {
+    width: 100%;
+    background-color: transparent;
+    padding: 1%;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+   }
