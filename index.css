@@ -292,3 +292,10 @@ body {
         width: 70px;
     }
 }
+
+
+@media (max-width: 500px) {
+    .logo {
+        margin-right: -60%;
+    }
+}
